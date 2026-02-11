@@ -10,6 +10,9 @@
 }
 
 .imagen-pino {
+    width: 70vw;
+    max-width: 700px;
+    height:  max-content;
     object-fit: cover;
     /* Ajusta sin deformar */
     display: block;
