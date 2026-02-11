@@ -10,7 +10,6 @@
 }
 
 .imagen-pino {
-    width: 50%;
     object-fit: cover;
     /* Ajusta sin deformar */
     display: block;
