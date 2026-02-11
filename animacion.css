@@ -1,0 +1,114 @@
+/* ===== OVERLAY DE TRANSICIÓN ===== */
+
+.transition-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.circle {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Colores cálidos tipo parque */
+.circle1 { background: #ff7a2f; }
+.circle2 { background: #ffb347; }
+.circle3 { background: #ffd699; }
+
+/* Animación activa */
+.transition-overlay.active .circle {
+    animation: moveCircle 1s ease-in-out forwards;
+}
+
+.transition-overlay.active .circle2 {
+    animation-delay: 0.15s;
+}
+
+.transition-overlay.active .circle3 {
+    animation-delay: 0.3s;
+}
+
+/* Keyframes */
+@keyframes moveCircle {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+        top: -150px;
+        right: -150px;
+    }
+
+    40% {
+        transform: scale(20);
+        opacity: 1;
+    }
+
+    70% {
+        top: 60%;
+        right: 60%;
+        opacity: 0;
+        transform: scale(10);
+    }
+
+    100% {
+        top: 100%;
+        right: 100%;
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+
+
+.titulo-conecta {
+    display: inline-block;
+    animation: latidoSuave 2.5s ease-in-out infinite;
+    transition: 0.3s;
+}
+
+/* Animación */
+@keyframes latidoSuave {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.titulo-conecta::after {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 20px;
+    background: rgba(255,122,47,0.2);
+    z-index: -1;
+    animation: ringExpand 2.5s ease-out infinite;
+}
+
+@keyframes ringExpand {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
