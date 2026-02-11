@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="animacion.css">
-     <link rel="stylesheet" href="animaciontitulo.css">
+    <link rel="stylesheet" href="tarjetasCalistenia.css">
+    <link rel="stylesheet" href="animaciontitulo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -15,11 +16,6 @@
 
 
 <body>
-    <div class="transition-overlay">
-    <span class="circle circle1"></span>
-    <span class="circle circle2"></span>
-    <span class="circle circle3"></span>
-</div>
     <div id="menu-principal">
 
         <div class="logo">VC_Calistenia</div>
@@ -32,14 +28,14 @@
 
         <nav class="menu-links" id="menu-links">
             <a class="menu-seccion" href="#introduccion-calistenia">Inicio</a>
-            <a class="menu-seccion" href="#quien-soy">Mi camino</a>
+            <a class="menu-seccion" href="#quien-soy">¿Quién soy?</a>
             <a class="menu-seccion" href="#que-ofrezco">Qué ofrezco</a>
             <a class="menu-seccion" href="#dificultades">Dificultades</a>
             <a class="menu-seccion" href="#contacto">Contacto</a>
         </nav>
 
     </div>
-    <img class="imagen-principal" src="img/vicentepro.png" alt="">
+    <img class="imagen-principal" src="img/vicente.jpg" alt="">
     <div id="contenedor-principal">
 
         <section id="introduccion-calistenia">
@@ -63,46 +59,81 @@
                 </p>
             </article>
 
-            <section>
+            <section class="beneficios">
                 <h2>¿Por qué elegir calistenia?</h2>
-                <ul>
-                    <li><strong>Accesible:</strong> Entrena en casa, en el parque o donde tengas una barra.</li>
-                    <li><strong>Progresiva:</strong> Empieza con lo básico y avanza a movimientos más complejos.</li>
-                    <li><strong>Funcional:</strong> Mejora la fuerza real que usas en tu día a día.</li>
-                    <li><strong>Económica:</strong> No necesitas gimnasio ni equipamiento costoso.</li>
-                    <li><strong>Completa:</strong> Trabaja fuerza, estabilidad y resistencia al mismo tiempo.</li>
-                </ul>
+
+                <div class="beneficios-grid">
+
+                    <div class="card">
+                        <div class="icon">🏠</div>
+                        <h3>Accesible</h3>
+                        <p>Entrena en casa, en el parque o donde tengas una barra.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">📈</div>
+                        <h3>Progresiva</h3>
+                        <p>Empieza con lo básico y avanza a movimientos más complejos.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">⚡</div>
+                        <h3>Funcional</h3>
+                        <p>Mejora la fuerza real que usas en tu día a día.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">💰</div>
+                        <h3>Económica</h3>
+                        <p>No necesitas gimnasio ni equipamiento costoso.</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="icon">🔥</div>
+                        <h3>Completa</h3>
+                        <p>Trabaja fuerza, estabilidad y resistencia al mismo tiempo.</p>
+                    </div>
+
+                </div>
             </section>
 
-            <section>
-                <h2>Más que fuerza: control corporal</h2>
-                <p>
-                    Uno de los grandes beneficios de la calistenia es el desarrollo del
-                    <strong>control corporal</strong>. No solo se trata de mover tu peso,
-                    sino de dominarlo. Esto mejora tu postura, coordinación y estabilidad.
-                </p>
-            </section>
+            <section class="control">
+                <div class="control-container">
 
-            <footer>
-                <p><strong>Aquí empieza tu progreso.</strong> 💪</p>
-            </footer>
+                    
+
+                    <div class="control-text">
+                        <h2>Más que fuerza.</h2>
+                        <h3>Control absoluto.</h3>
+                        <p>
+                            No se trata solo de mover tu peso. Se trata de dominarlo.
+                            La calistenia mejora tu postura, coordinación y estabilidad,
+                            desarrollando un control corporal real.
+                        </p>
+                    </div>
+                    <div class="control-img">
+                        <img src="img/pino.png" alt="Control corporal en calistenia">
+                    </div>
+
+                </div>
+            </section>
         </section>
         <!-- SECCIÓN quien soy -->
         <section id="quien-soy">
-            <h1>Mi camino</h1>
+            <h1>¿Quién soy?</h1>
             <p>
                 Mi nombre es Vicente, tengo 22 años y llevo 6 años en la calistenia. Enseño fuerza y
                 técnica con un método claro y realista, desde el nivel básico hasta el avanzado. Pero
                 hay algo que nadie te dice: habrá días sin motivación, sin ganas y sin apoyo. Y justo
                 esos días, los que más duelen, son los que te hacen avanzar de verdad. Si sigues, aunque
-                sea despacio, podrás cambiar más de lo que imaginas. Yo te acompañaré en el proceso. Valdrá la pena
+                sea despacio, podrás cambiar más de lo que imaginas. Yo te acompañaré en el proceso. Valdrá la pena.
             </p>
 
             <p>
                 A través de experiencia práctica y aprendizaje continuo, he descubierto que
                 el progreso no depende del equipamiento, sino de la constancia y la técnica correcta.
             </p>
-            <img class="imagen-pino" src="img/pino.png" alt="">
+            <img class="imagen-pino" src="img/vicentepro2.png" alt="">
         </section>
         <!-- SECCIÓN QUÉ OFREZCO -->
         <section id="que-ofrezco">
@@ -113,9 +144,12 @@
                 <li>Asesoramiento para mejorar técnica y postura.</li>
                 <li>Planificación de entrenamientos semanales.</li>
                 <li>Consejos sobre motivación y disciplina.</li>
+                <li>Acompañamiento en hábitos saludables para apoyar tu progreso.</li>
+                <li>Todo enfocado en que avances de forma segura y constante.</li>
             </ul>
             <p>
-                Todo enfocado en que avances de forma segura y constante.
+               <strong>Mi Sistema de Progresiones</strong> Un método claro,
+                estructurado y realista que te lleva desde nivel 0 hasta movimientos avanzados, paso a paso y sin perderte. 
             </p>
         </section>
 
@@ -150,6 +184,7 @@
                         <li>Prevención de lesiones desde el primer día.</li>
                         <li>Técnica básica explicada paso a paso.</li>
                         <li>Rutinas grabadas para principiantes.</li>
+                        <li>Ayudo a resolver dudas siempre que la necesiten.</li>
                     </ul>
                     <p class="precio">30€</p>
                 </article>
@@ -176,7 +211,7 @@
                         <li>Incluye todo lo del Power Pack.</li>
                         <li>Rutinas grabadas intermedio-avanzado.</li>
                         <li>Videoconferencias ilimitadas según necesidades.</li>
-                        <li>Creación de rutinas personalizadas (entrenamiento + alimentación).</li>
+                        <li>Acompañamiento nutricional básico para mejorar tus hábitos y apoyar tu progreso.</li>
                         <li>Seguimiento completo para transformar tu cuerpo y rendimiento.</li>
                     </ul>
                     <p class="precio">100€</p>
@@ -185,7 +220,7 @@
             </div>
 
             <p class="nota-paquetes">
-                Videollamada inicial gratuita de 15 minutos para definir tu objetivo.
+                Videollamada inicial gratuita de 15 minutos para definir tu objetivo.*
             </p>
         </section>
 
@@ -226,8 +261,8 @@
     let paquetes = document.querySelectorAll(".paquete-prime")
     paquetes.forEach(x => {
         x.addEventListener("click", () => {
-            window.location.href="#contacto"
-           
+            window.location.href = "#contacto"
+
         })
     })
 </script>
