@@ -150,7 +150,6 @@ section {
     padding: 20px;
     border-radius: 20px;
     background: #ffffff;
-    box-shadow: 0 10px 30px rgba(255, 122, 47, 0.08);
     transition: 0.3s ease;
     scroll-margin-top: 120px;
 }
